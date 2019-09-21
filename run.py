@@ -26,11 +26,11 @@ sticky (string, optional): Stick the navbar to the top or the bottom of the view
 """
 
 navbar = dbc.NavbarSimple(
-    brand='The Quake Finder',
+    brand="The Quake Locater",
     brand_href='/',
     children=[
         dbc.NavItem(dcc.Link('Predict Earthquake location', href='/predictions', className='nav-link')),
-        dbc.NavItem(dcc.Link('Logged Earthquakes', href='/insights', className='nav-link')),
+        dbc.NavItem(dcc.Link('EarthQuakes in the United States', href='/insights', className='nav-link')),
         dbc.NavItem(dcc.Link('More information', href='/process', className='nav-link')),
     ],
     sticky='top',
