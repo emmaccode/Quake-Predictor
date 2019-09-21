@@ -28,7 +28,7 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
 
-            # The Quake Predictor
+            # The Quake Locater
             🧠 The Quake Predictor uses machine learning to predict where
             earthquakes of certain magnitudes will be.
 
@@ -41,7 +41,7 @@ column1 = dbc.Col(
 
             """
         ),
-        dcc.Link(dbc.Button('Predict', color='secondary'), href='/predictions')
+        dcc.Link(dbc.Button('Start Predicting!', color='secondary'), href='/predictions')
     ],
     md=4,
 )
