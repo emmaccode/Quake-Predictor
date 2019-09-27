@@ -23,8 +23,6 @@ column1 = dbc.Col(
 )
 import pandas as pd
 import numpy as np
-import itertools
-import operator
 import plotly.graph_objects as go
 """# Reading and cleaning"""
 df = pd.read_csv("https://opendata.socrata.com/api/views/77jn-2ym9/rows.csv")
