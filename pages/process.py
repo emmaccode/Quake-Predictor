@@ -22,7 +22,7 @@ column1 = dbc.Col(
 
             """
         ),
-        html.A("Medium Post", href='https://plot.ly', target="_blank",className=".myButton"),
+        html.A("Medium Post", href='http://medium.com/emmettgb', target="_blank",className=".myButton"),
         dcc.Markdown(
             """
             Additionally, it is open-source! You can view the source for this

@@ -18,15 +18,6 @@ column1 = dbc.Col(
 
             """
         ),
-        dcc.Markdown(
-            """
-
-            ## Predict the magnitude
-            The model's train accuracy usually sits around 90 percent accuracy.
-            The predictor will allow you to find out information about the
-            likelihood of being in danger.
-            """
-        ),
     ],
     md=4,
 )
