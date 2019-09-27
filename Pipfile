@@ -12,6 +12,9 @@ gunicorn = "*"
 plotly = "*"
 jupyter = "*"
 pandas = "*"
+sklearn = "*"
+xgboost = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.7"
