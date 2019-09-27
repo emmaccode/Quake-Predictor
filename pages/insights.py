@@ -20,6 +20,13 @@ import numpy as np
 import plotly.express as px
 tips = px.data.tips()
 fig = px.histogram(df, x="State", color="Magnitude Type",title="U.S. EarthQuakes by State and Magnitude")
+import colorlover as cl
+bupu = cl.scales['3']['div']['RdYlBu']
+# Create figure
+fig2 = px.scatter(df, x="mag", y="State", color="depth",
+                 size='gap', hover_data=['mag'],
+                title="North American Location and Earthquake magnitude",
+                color_continuous_scale=bupu)
 column1 = dbc.Col(
     [
         dcc.Markdown(
@@ -69,7 +76,12 @@ column2 = dbc.Col(
     [
         dcc.Graph(figure=fig),
         html.Img(src='/assets/tectonic_map.png'),
+
     ]
 )
 
-layout = dbc.Row([column1, column2])
+drow = dbc.Row([
+dcc.Graph(figure=fig2),
+html.Img(src='/assets/magnitudinal.png'),
+])
+layout = dbc.Row([column1, column2]),dbc.Row([drow])

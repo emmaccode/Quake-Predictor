@@ -13,16 +13,16 @@ column1 = dbc.Col(
 
             # Information
             Hi, my name is Emmett Boudreau, and I'm a Data Scientist. This app
-            uses a Random Forest Classifier model with an accuracy of about 90 percent
+            uses an XGBoost Classifier model with an accuracy of about 90 percent
             to predict what state an
             earthquake will take place in based on the specifications of the
             said Earthquake. For more information on the development of this
             model, and the development of this application, I have a post on
-            Medium outlining the whole thing.
+            Medium outlining the project.
 
             """
         ),
-        dcc.Link(dbc.Button('Open on medium', color='secondary'), href='/predictions'),
+        html.A("Medium Post", href='https://plot.ly', target="_blank",className=".myButton"),
         dcc.Markdown(
             """
             Additionally, it is open-source! You can view the source for this
@@ -30,7 +30,7 @@ column1 = dbc.Col(
 
             """
         ),
-        dcc.Link(dbc.Button('Open source', color='secondary'), href='/predictions'),
+        html.A("Source on github", href='https://github.com/emmettgb/Quake-Predictor', target="_blank",className=".myButton"),
         dcc.Markdown(
             """
             If you would like to see more of my Data Science
@@ -38,7 +38,7 @@ column1 = dbc.Col(
 
             """
         ),
-        dcc.Link(dbc.Button('Visit my Portfolio', color='secondary'), href='http://emmettboudreau.com/')
+        html.A("My Portfolio", href='https://emmettboudreau.com', target="_blank",className=".myButton"),
     ],
 )
 
