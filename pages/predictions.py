@@ -23,7 +23,6 @@ column1 = dbc.Col(
 )
 import pandas as pd
 import numpy as np
-import scipy.stats as scs
 import itertools
 import operator
 import plotly.graph_objects as go
