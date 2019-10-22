@@ -7,7 +7,7 @@ from dash.dependencies import Input, Output
 
 # Imports from this application
 from app import app, server
-import index, predictions, insights, process
+from pages import .index, .predictions, .insights, .process
 
 """
 https://dash-bootstrap-components.opensource.faculty.ai/l/components/navbar
