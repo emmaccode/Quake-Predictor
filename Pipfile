@@ -16,7 +16,6 @@ scikit-learn = "*"
 sklearn = "*"
 xgboost = "*"
 numpy = "*"
-category_encoders=="*"
-colorlover=="*"
+
 [requires]
 python_version = "3.7"
